@@ -1,0 +1,180 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Noto Sans TC', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+    font-weight: normal;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    div.logo {
+        margin: 1rem;
+        align-items: center;
+        flex: 5 1 400px;
+        display: flex;
+        img {
+            margin-right: 1rem;
+            width: 8vw;
+            height: 6vw;
+        }
+    }
+
+    nav {
+        flex: 2 1 400px;
+        ul {
+            display: flex;
+            list-style-type: none;
+            justify-content: space-around;
+            li {
+                a{
+                    color: #9C5F0E;
+                    text-decoration: none;
+                    font-size: 1.25rem;
+                }
+            }
+        }
+    }
+}
+
+main {
+    section.backImg {
+        min-height: 50vw;
+        width: 100%;
+        background-image: url(../pictures/bid_picture.jpg);
+        background-size: cover;
+        background-position: center;
+        position: relative;
+        z-index: 0;
+
+        display: flex;
+        justify-content:center ;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+
+        div.filter {
+            background-color: rgba(0,0,0,0.3);
+            width: 100%;
+            min-height: 50vw;
+            position: absolute;
+            top: 0;
+            z-index: -1;
+        }
+        h3 {
+            color: aliceblue;
+            font-size: 2.5rem;
+            margin: 1rem 0rem;
+            line-height: 7rem;
+        }
+        button.start{
+            background-color: #A68456;
+            color: aliceblue;
+            padding: 1rem 1.5rem;
+            font-size: 1.5rem;
+            border: none;
+            border-radius: 1rem;
+            cursor: pointer;
+        }
+    }
+    section.second{
+        // min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+
+        h2{
+            font-size: 1.8rem;
+            margin: 2rem 1rem;
+        }
+        section.cards{
+            display: flex;
+            // border:2px solid red;
+            width: 90%;
+            height: 70vh;
+            flex-wrap: wrap;
+            justify-content: center;
+
+            div.card{
+                // border: 2px solid blue;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: space-around;
+                padding: 1rem;
+                flex: 1 1 200px;
+                
+                img{
+                    width: 20vw;
+                    height: 16vw;
+                    border-radius: 30%;
+                    margin: 1rem 0rem;
+                }
+                h4{
+                    font-size: 1.6rem;
+                    margin: 1rem 0rem;
+                }
+                p{
+                    font-size: 1.25rem;
+                }
+                a{
+                    text-decoration: none;
+                    padding: 1rem 1.5rem;
+                    background-color: #A68456;
+                    color: aliceblue;
+                    border-radius: 1rem;
+                    font-size: 1.25rem;
+                    margin: 1rem 0rem;
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width : 650px) {
+    header{
+        div.logo{
+            img{
+                width: 16vw;
+                height: 12vw;
+            }
+        }
+    }
+    
+}
+@media screen and (max-width : 710px){
+    main{
+        section.backImg{
+            min-height: 90vw;
+
+            div.filter{
+                min-height: 90vw;
+            }
+
+            h3{
+                font-size: 1.5rem;
+                line-height: 3rem;
+            }
+        }
+        section.second{
+            section.cards{
+                div.card{
+                    img{
+                        width: 60vw;
+                        height: 45vw;
+                    }
+                }
+            }
+        }
+    }
+}
