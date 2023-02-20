@@ -94,7 +94,7 @@ main section.second h2 {
 main section.second section.cards {
   display: flex;
   width: 90%;
-  height: 70vh;
+  min-height: 80vh;
   flex-wrap: wrap;
   justify-content: center;
 }
@@ -129,8 +129,59 @@ main section.second section.cards div.card a {
   margin: 1rem 0rem;
 }
 
+footer {
+  background-color: #805720;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 35vh;
+  justify-content: space-around;
+}
+footer div.logo {
+  align-items: center;
+  display: flex;
+}
+footer div.logo img {
+  margin-right: 1rem;
+  width: 8vw;
+  height: 6vw;
+}
+footer div.logo h1 {
+  color: aliceblue;
+}
+footer nav {
+  width: 40%;
+}
+footer nav ul {
+  width: 100%;
+  justify-content: space-around;
+  display: flex;
+  list-style-type: none;
+  flex-wrap: wrap;
+}
+footer nav ul li {
+  flex-basis: 100px;
+}
+footer nav ul li a {
+  font-weight: 600;
+  color: white;
+  text-decoration: none;
+  font-size: 1.25rem;
+}
+footer section.links a {
+  margin: 0rem 1rem;
+}
+footer section.links a img {
+  height: 5vw;
+  width: 5vw;
+}
+
 @media screen and (max-width: 650px) {
   header div.logo img {
+    width: 16vw;
+    height: 12vw;
+  }
+  footer div.logo img {
     width: 16vw;
     height: 12vw;
   }
