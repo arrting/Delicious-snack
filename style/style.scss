@@ -18,6 +18,12 @@ header {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
+    position: sticky;
+    top: 0;
+    z-index: 5;
+    background-color: rgb(255, 255, 255);
+    box-shadow:         3px 3px 5px 1px #585555;
+
     div.logo {
         margin: 1rem;
         align-items: center;
@@ -25,8 +31,11 @@ header {
         display: flex;
         img {
             margin-right: 1rem;
-            width: 8vw;
-            height: 6vw;
+            width: 6vw;
+            height: 4vw;
+        }
+        h1 {
+            color: #9C5F0E;
         }
     }
 
@@ -114,13 +123,23 @@ main {
                 justify-content: space-around;
                 padding: 1rem;
                 flex: 1 1 200px;
-                
-                img{
+
+                div.img-container {
+                    overflow: hidden;
                     width: 20vw;
                     height: 16vw;
                     border-radius: 30%;
-                    margin: 1rem 0rem;
+                    img{
+                        width: 20vw;
+                        height: 16vw;
+                        border-radius: 30%;
+                        transition: all 0.2s;
+                    }
+                    img:hover {
+                        transform: scale(1.2);
+                    }
                 }
+                
                 h4{
                     font-size: 1.6rem;
                     margin: 1rem 0rem;
@@ -192,6 +211,27 @@ footer {
         }
     }
 }
+
+// scrollbar
+ /* width */
+ ::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #bb754ab8;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #893c3c;
+  } 
 
 @media screen and (max-width : 650px) {
     header{

@@ -18,6 +18,11 @@ header {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
+  position: sticky;
+  top: 0;
+  z-index: 5;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 3px 3px 5px 1px #585555;
 }
 header div.logo {
   margin: 1rem;
@@ -27,8 +32,11 @@ header div.logo {
 }
 header div.logo img {
   margin-right: 1rem;
-  width: 8vw;
-  height: 6vw;
+  width: 6vw;
+  height: 4vw;
+}
+header div.logo h1 {
+  color: #9C5F0E;
 }
 header nav {
   flex: 2 1 400px;
@@ -106,11 +114,20 @@ main section.second section.cards div.card {
   padding: 1rem;
   flex: 1 1 200px;
 }
-main section.second section.cards div.card img {
+main section.second section.cards div.card div.img-container {
+  overflow: hidden;
   width: 20vw;
   height: 16vw;
   border-radius: 30%;
-  margin: 1rem 0rem;
+}
+main section.second section.cards div.card div.img-container img {
+  width: 20vw;
+  height: 16vw;
+  border-radius: 30%;
+  transition: all 0.2s;
+}
+main section.second section.cards div.card div.img-container img:hover {
+  transform: scale(1.2);
 }
 main section.second section.cards div.card h4 {
   font-size: 1.6rem;
@@ -174,6 +191,26 @@ footer section.links a {
 footer section.links a img {
   height: 5vw;
   width: 5vw;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgba(187, 117, 74, 0.7215686275);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #893c3c;
 }
 
 @media screen and (max-width: 650px) {
