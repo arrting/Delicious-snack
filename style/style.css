@@ -22,7 +22,7 @@ header {
   top: 0;
   z-index: 5;
   background-color: rgb(255, 255, 255);
-  box-shadow: 3px 3px 5px 1px #585555;
+  transition: all 0.25s ease;
 }
 header div.logo {
   margin: 1rem;

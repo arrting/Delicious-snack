@@ -22,7 +22,8 @@ header {
     top: 0;
     z-index: 5;
     background-color: rgb(255, 255, 255);
-    box-shadow:         3px 3px 5px 1px #585555;
+    transition: all 0.25s ease;
+    // box-shadow:         3px 3px 5px 1px #585555;
 
     div.logo {
         margin: 1rem;
@@ -43,6 +44,7 @@ header {
         flex: 2 1 400px;
         ul {
             display: flex;
+            // flex-wrap: wrap;
             list-style-type: none;
             justify-content: space-around;
             li {
@@ -241,6 +243,16 @@ footer {
                 height: 12vw;
             }
         }
+
+    // nav {
+    //   ul {
+    //     flex-direction: column;
+    //     li {
+    //         padding-left: 2rem;
+    //         padding-bottom: 1rem;
+    //     }
+    //   }  
+    // }
     }
     footer{
         div.logo{
