@@ -405,11 +405,28 @@ footer {
 @media screen and (min-width : 1800px){
     main{
         //border:3px solid tan;
-        height: 55vh;
+        min-height: 55vh;
     }
-    footer{
+    footer.menu{
         position: absolute;
         bottom: 0;
+    }
+    footer{
+        min-height: 25vh;
+        div.logo{
+            img{
+                width: 3vw;
+                height: 2vw;
+            }
+        }
+        section.links{
+            a{
+                img{
+                    height: 2vw;
+                    width: 2vw;
+                }
+            }
+        }
     }
 
 }

@@ -141,14 +141,14 @@ function loadData(){
 
 // ];
 
-window.addEventListener("click",() =>{
-    //localStorage.setItem("menus",JSON.stringify(myMenu));
-    // let myMenuArray = JSON.parse(localStorage.getItem("list"));
-    //console.log(localStorage.getItem("list"));
-    // myMenuArray.push(" ");
-    //localStorage.setItem("menus",JSON.stringify(myMenuArray))
-    localStorage.removeItem("menus");
-})
+// window.addEventListener("click",() =>{
+//     //localStorage.setItem("menus",JSON.stringify(myMenu));
+//     // let myMenuArray = JSON.parse(localStorage.getItem("list"));
+//     //console.log(localStorage.getItem("list"));
+//     // myMenuArray.push(" ");
+//     //localStorage.setItem("menus",JSON.stringify(myMenuArray))
+//     localStorage.removeItem("menus");
+// })
 
 
 //console.log(add);
