@@ -14,6 +14,10 @@ h6{
     font-weight: normal;
 }
 
+body{
+  height: 100%;
+}
+
 header {
     display: flex;
     align-items: center;
@@ -59,6 +63,7 @@ header {
 }
 
 main {
+    min-height: 100%;
     section.backImg {
         min-height: 50vw;
         width: 100%;
@@ -165,6 +170,7 @@ main {
     section.list{
         background-color: #805720;
         width: 20%;
+        //min-height: 60vh;
         margin: 1rem;
         border-radius: 10px;
         display: flex;
@@ -243,6 +249,7 @@ main.menu{
 }
 
 footer {
+    width: 100%;
     background-color: #805720;
     display: flex;
     flex-direction: column;
@@ -388,4 +395,21 @@ footer {
             }
         }
     }
+}
+@media screen and (min-width : 1200px){
+    main.section.list{
+        min-height: 90vh;
+    }
+
+}
+@media screen and (min-width : 1800px){
+    main{
+        //border:3px solid tan;
+        height: 55vh;
+    }
+    footer{
+        position: absolute;
+        bottom: 0;
+    }
+
 }

@@ -14,6 +14,10 @@ h6 {
   font-weight: normal;
 }
 
+body {
+  height: 100%;
+}
+
 header {
   display: flex;
   align-items: center;
@@ -52,6 +56,9 @@ header nav ul li a {
   font-size: 1.25rem;
 }
 
+main {
+  min-height: 100%;
+}
 main section.backImg {
   min-height: 50vw;
   width: 100%;
@@ -221,6 +228,7 @@ main.menu section.menu {
 }
 
 footer {
+  width: 100%;
   background-color: #805720;
   display: flex;
   flex-direction: column;
@@ -328,5 +336,19 @@ footer section.links a img {
   main.menu section.list ul li {
     font-size: 1.2rem;
     padding: 0.3rem;
+  }
+}
+@media screen and (min-width: 1200px) {
+  main.section.list {
+    min-height: 90vh;
+  }
+}
+@media screen and (min-width: 1800px) {
+  main {
+    height: 55vh;
+  }
+  footer {
+    position: absolute;
+    bottom: 0;
   }
 }/*# sourceMappingURL=style.css.map */
