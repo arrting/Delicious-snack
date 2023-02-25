@@ -347,7 +347,7 @@ footer section.links a img {
   main {
     min-height: 55vh;
   }
-  footer.menu {
+  footer#menu {
     position: absolute;
     bottom: 0;
   }
