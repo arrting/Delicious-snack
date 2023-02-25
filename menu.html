@@ -21,6 +21,13 @@
     <!--title icon-->
     <link rel="shortcut icon" href="./Icons/logo_icon_128.png" />
     <link rel="bookmark" href="./Icons/logo_icon_128.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
 
     <link rel="stylesheet" href="./style/style.css" />
   </head>
@@ -34,7 +41,7 @@
 
       <nav>
         <ul>
-          <li><a href="#">首頁</a></li>
+          <li><a href="./index.html">首頁</a></li>
           <li><a href="#">關於我們</a></li>
           <li><a href="#">會員登入</a></li>
           <li><a href="#">聯絡我們</a></li>
@@ -42,58 +49,34 @@
       </nav>
     </header>
 
-    <main>
-      <!--圖片部分of first page-->
-      <section class="backImg">
-        <div class="filter"></div>
-        <h3>
-          甜點是生命中最甜蜜的事情<br />
-          讓我們的甜點為您的生命增添一點甜蜜
-        </h3>
-        <button class="start" onclick="location.href='./menu.html'">
-          現在開始
-        </button>
+    <main class="menu">
+      <section class="list">
+        <h2>菜單列表</h2>
+        <ul>
+          <!-- <li>草莓奶酥</li>
+          <li>肉桂捲</li>
+          <li>起司蛋糕</li>
+          <li>巧克力餅乾</li>
+          <li>香菇鹹派</li> -->
+        </ul>
+        <a href="./addRecipe.html" class="add"
+          ><i class="fa-solid fa-plus"></i
+        ></a>
       </section>
-      <!--second page-->
-      <section class="second">
-        <h2>
-          讓您的口感為之一震，讓我們的甜點成為您最好的選擇。<br />
-          <span style="color: #9c5f0e">享受自己的時光</span>
-        </h2>
-        <section class="cards">
-          <div class="card">
-            <div class="img-container">
-              <img src="./pictures/food1.jpg" alt="picture" />
-            </div>
-            <h4>快速查閱</h4>
-            <p>
-              每一個甜點都是我們的匠心之作，我們相信您可以品嚐到每一個細節的味道
-            </p>
-            <a href="./menu.html">觀看文章</a>
-          </div>
 
-          <div class="card">
-            <div class="img-container">
-              <img src="./pictures/food3.jpg" alt="picture" />
-            </div>
-            <h4>製作方便</h4>
-            <p>
-              經典美味，品味無限，讓我們的甜點帶給您一種無法言語的美妙體驗。
-            </p>
-            <a href="./menu.html">了解更多</a>
-          </div>
-
-          <div class="card">
-            <div class="img-container">
-              <img src="./pictures/food4.jpg" alt="picture" />
-            </div>
-            <h4>種類多樣</h4>
-            <p>
-              讓您的生活變得更加甜蜜，讓我們的甜點成為您生活中不可或缺的一部分。
-            </p>
-            <a href="./menu.html">馬上觀看</a>
-          </div>
-        </section>
+      <section class="menu">
+        <!-- 品名 -->
+        <div class="snackName">
+          <h2>品名:</h2>
+        </div>
+        <!-- 食材 -->
+        <div class="ingredients">
+          <h2>食材:</h2>
+        </div>
+        <!-- 做法 -->
+        <div class="method">
+          <h2>做法:</h2>
+        </div>
       </section>
     </main>
 

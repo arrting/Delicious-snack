@@ -145,6 +145,80 @@ main section.second section.cards div.card a {
   font-size: 1.25rem;
   margin: 1rem 0rem;
 }
+main section.list {
+  background-color: #805720;
+  width: 20%;
+  margin: 1rem;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 1rem;
+  position: relative;
+}
+main section.list h2 {
+  color: white;
+  font-size: 2rem;
+  padding: 1rem;
+}
+main section.list ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  list-style-type: none;
+}
+main section.list ul li {
+  color: white;
+  font-size: 1.5rem;
+  padding: 1rem;
+  cursor: pointer;
+}
+main section.list ul li:hover {
+  color: #ffc87b;
+}
+main section.list a.add {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  background-color: #EBB163;
+  color: black;
+  font-size: 1.25rem;
+  padding: 0.5rem 0.8rem;
+  border-radius: 50px;
+  text-decoration-style: none;
+}
+main section.menu {
+  padding: 2rem;
+}
+main section.menu div {
+  margin-bottom: 2rem;
+}
+main section.menu div h2 {
+  font-size: 2rem;
+  color: #805720;
+  margin-bottom: 1rem;
+}
+main section.menu div p {
+  font-size: 1.5rem;
+}
+main section.menu div.snackName {
+  display: flex;
+}
+main section.menu div.snackName p {
+  margin: 0rem 2rem;
+  font-size: 2rem;
+}
+
+main.menu {
+  display: flex;
+  flex-direction: row;
+}
+main.menu section.list {
+  flex: 1 1 300px;
+}
+main.menu section.menu {
+  flex: 3 1 1000px;
+}
 
 footer {
   background-color: #805720;
@@ -237,5 +311,22 @@ footer section.links a img {
   main section.second section.cards div.card img {
     width: 60vw;
     height: 45vw;
+  }
+  main.menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  main.menu section.list {
+    width: 90%;
+    padding: 1rem;
+  }
+  main.menu section.list h2 {
+    padding: 0.5rem;
+    font-size: 1.5rem;
+  }
+  main.menu section.list ul li {
+    font-size: 1.2rem;
+    padding: 0.3rem;
   }
 }/*# sourceMappingURL=style.css.map */

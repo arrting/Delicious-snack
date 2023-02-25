@@ -161,6 +161,85 @@ main {
             }
         }
     }
+
+    section.list{
+        background-color: #805720;
+        width: 20%;
+        margin: 1rem;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 1rem;
+        position: relative;
+        h2{
+            color: white;
+            font-size: 2rem;
+            padding: 1rem;
+        }
+        ul{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            list-style-type: none;
+            li{
+                color: white;
+                font-size: 1.5rem;
+                padding: 1rem;
+                cursor: pointer;
+            }
+            li:hover{
+                color: #ffc87b;
+            }
+        }
+        a.add{  
+            position: absolute;
+            bottom: 10px;
+            right: 10px;
+            background-color: #EBB163;
+            color: black;
+            font-size: 1.25rem;
+            padding: 0.5rem 0.8rem;
+            border-radius: 50px;
+            text-decoration-style: none;
+        }
+    }
+    section.menu{
+        //border:2px solid #805720;
+        padding: 2rem;
+        div{
+            margin-bottom: 2rem;
+            h2 {
+                font-size: 2rem;
+                color: #805720;
+                margin-bottom: 1rem;
+            }
+            p {
+                font-size: 1.5rem;
+            }
+        }
+        div.snackName{
+            display: flex;
+            p{
+                //background-color: #893c3c;
+                margin: 0rem 2rem;
+                font-size: 2rem;
+            }
+        } 
+    }
+}
+
+main.menu{
+    //background-color: #893c3c;
+    display: flex;
+    flex-direction: row;
+    section.list{
+        flex: 1 1 300px;
+    }
+    section.menu {
+        flex: 3 1 1000px;
+    }
+    
 }
 
 footer {
@@ -285,6 +364,26 @@ footer {
                         width: 60vw;
                         height: 45vw;
                     }
+                }
+            }
+        }
+        
+    }
+    main.menu{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        section.list{
+            width: 90%;
+            padding: 1rem;
+            h2 {
+                padding: 0.5rem;
+                font-size: 1.5rem;
+            }
+            ul{
+                li{
+                    font-size: 1.2rem;
+                    padding: 0.3rem;
                 }
             }
         }
