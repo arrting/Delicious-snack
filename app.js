@@ -6,8 +6,9 @@ let addList = document.querySelector("main section ul");
 let snackName = document.querySelector("section.menu div.snackName");
 let ingredients = document.querySelector("section.menu div.ingredients");
 let method = document.querySelector("section.menu div.method");
-// console.log(method);
-// console.log(headerAnchor);
+
+let page = document.querySelector("main");
+ //console.log(page.classList[0]);
 
 //console.log(header);
 
@@ -30,26 +31,41 @@ window.addEventListener("scroll",() => {
     //console.log(typeof header.style.backgroundColor);
 })
 
-loadData();
+if(page.classList[0] == 'menu'){
+    loadData();
 
+    //重置菜單
+    let reset = document.querySelector("main.menu section button");
+    //console.log(reset);
+    reset.addEventListener("click", ()=>{
+        localStorage.removeItem("menus");
+        //console.log("reset");
+        window.location.reload();
+        //loadData();
+    })
+}
+// loadData();
+//loadData();
 //點擊更換菜單
 let snackLi = document.querySelectorAll("main.menu section.list ul li");
 
 snackLi.forEach((e,index) => {
-    console.log(index);
+    //console.log(index);
     let myMenusArray = JSON.parse(localStorage.getItem("menus"));
     snackLi[index].addEventListener("click",()=>{
-        console.log(index);
+        //console.log(index);
         let p1 = document.querySelector("main.menu section div.snackName p");
         p1.innerText = myMenusArray[index].snackName;
         let p2 = document.querySelector("main.menu section div.ingredients p");
         p2.innerText = myMenusArray[index].ingredients;
         let p3 = document.querySelector("main.menu section div.method p");
         p3.innerText = myMenusArray[index].method;
-        console.log(p1.innerText);
-        console.log(e);
+        //console.log(p1.innerText);
+        console.log("更換菜單");
     })
 })
+
+
 
 
     //console.log(typeof addList);
@@ -120,6 +136,8 @@ function loadData(){
     method.appendChild(p3);
 
 }
+
+
 // let myMenu = [
 //     {
 //         snackName:"草莓奶酥",

@@ -4,14 +4,82 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>TITLE!</title>
+    <title>Delicious Snack – Always keep you warm</title>
     <meta name="author" content="Arrting" />
-    <meta name="description" content="" />
+    <meta
+      name="description"
+      content="每一個甜點都是我們的匠心之作，我們相信您可以品嚐到每一個細節的味道,無論您是在享受自己的時光，還是和朋友共度美好時光，我們的甜點總能讓您感受到甜蜜和溫暖。"
+    />
     <meta name="robots" content="index,follow" />
-    <link rel="stylesheet" href="./styles/style.css" />
+    <!--google font字體-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap"
+      rel="stylesheet"
+    />
+    <!--title icon-->
+    <link rel="shortcut icon" href="./Icons/logo_icon_128.png" />
+    <link rel="bookmark" href="./Icons/logo_icon_128.png" />
+
+    <link rel="stylesheet" href="./style/style.css" />
   </head>
   <body>
-    <h1>施工中</h1>
-    <button onclick="location.href='./index.html'">回首頁~</button>
+    <!--header-->
+    <header>
+      <div class="logo">
+        <img src="./Icons/logo_icon_128.png" alt="logo" />
+        <h1>Delicious Snack</h1>
+      </div>
+
+      <nav>
+        <ul>
+          <li><a href="./index.html">首頁</a></li>
+          <li><a href="#">關於我們</a></li>
+          <li><a href="#">會員登入</a></li>
+          <li><a href="#">聯絡我們</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!--main-->
+    <main class="form">
+      <h1>新增菜單</h1>
+      <!-- <button onclick="location.href='./index.html'">回首頁~</button> -->
+      <form action="">
+        <label for="name">品名:</label>
+        <input type="text" required />
+        <label for="ingredients">材料:</label>
+        <textarea cols="30" rows="10" required></textarea>
+        <label for="method">做法:</label>
+        <textarea cols="30" rows="10" required></textarea>
+        <button type="submit">提交</button>
+      </form>
+      <a href="./menu.html">回食譜頁</a>
+    </main>
+
+    <!--footer-->
+    <footer>
+      <div class="logo">
+        <img src="./Icons/logo_icon_128.png" alt="logo" />
+        <h1>Delicious Snack</h1>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Login</a></li>
+          <li><a href="#">Contant</a></li>
+        </ul>
+      </nav>
+      <section class="links">
+        <a href="#"><img src="./Icons/facebook.svg" alt="facebook" /></a>
+        <a href="#"><img src="./Icons/instagram.svg" alt="instagram" /></a>
+        <a href="#"><img src="./Icons/twitter.svg" alt="twitter" /></a>
+        <a href="#"><img src="./Icons/youtube.svg" alt="youtube" /></a>
+      </section>
+    </footer>
   </body>
+  <script src="./app.js"></script>
+  <script src="./add.js"></script>
 </html>

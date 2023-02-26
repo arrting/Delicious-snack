@@ -194,6 +194,18 @@ main section.list a.add {
   border-radius: 50px;
   text-decoration-style: none;
 }
+main section.list button {
+  position: absolute;
+  font-size: 1.25rem;
+  right: 8px;
+  top: 10px;
+  height: 45px;
+  width: 45px;
+  background-color: #EBB163;
+  border-style: none;
+  cursor: pointer;
+  border-radius: 50px;
+}
 main section.menu {
   padding: 2rem;
 }
@@ -225,6 +237,49 @@ main.menu section.list {
 }
 main.menu section.menu {
   flex: 3 1 1000px;
+}
+
+main.form {
+  border: 2px solid #805720;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+main.form h1 {
+  margin-top: 1.5rem;
+  color: #9C5F0E;
+}
+main.form form {
+  display: flex;
+  flex-direction: column;
+  width: 50vw;
+}
+main.form form label {
+  font-size: 1.25rem;
+  margin: 1rem 0rem;
+}
+main.form form input, main.form form textarea {
+  border: 2px solid #805720;
+  font-size: 1.25rem;
+}
+main.form form button {
+  padding: 1rem;
+  margin: 1rem 16vw;
+  font-size: 1.25rem;
+  background-color: #A68456;
+  color: white;
+  border-radius: 10px;
+}
+main.form a {
+  position: absolute;
+  text-decoration: none;
+  background-color: #A68456;
+  padding: 1.15rem 1.5rem;
+  color: white;
+  border-radius: 10px;
+  left: 10px;
+  bottom: 13px;
 }
 
 footer {
@@ -336,6 +391,10 @@ footer section.links a img {
   main.menu section.list ul li {
     font-size: 1.2rem;
     padding: 0.3rem;
+  }
+  main.form form button {
+    margin: 1rem 10vw;
+    font-size: 1rem;
   }
 }
 @media screen and (min-width: 1200px) {
