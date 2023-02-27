@@ -248,6 +248,23 @@ main {
     }
 }
 
+main.page302{
+    //background-color: #805720;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    img{
+        padding: 3rem;
+    }
+    a{
+        text-decoration-style: none;
+        background-color: #805720;
+        color: white;
+        padding: 1rem 1.5rem;
+        border-radius: 10px;
+    }
+}
+
 main.menu{
     //background-color: #893c3c;
     display: flex;

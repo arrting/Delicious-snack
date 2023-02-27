@@ -228,6 +228,22 @@ main section.menu div.snackName p {
   font-size: 2rem;
 }
 
+main.page302 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+main.page302 img {
+  padding: 3rem;
+}
+main.page302 a {
+  text-decoration-style: none;
+  background-color: #805720;
+  color: white;
+  padding: 1rem 1.5rem;
+  border-radius: 10px;
+}
+
 main.menu {
   display: flex;
   flex-direction: row;
